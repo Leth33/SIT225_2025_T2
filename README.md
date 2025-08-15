@@ -1,6 +1,6 @@
 # 📡 SIT225 — Data Capture Technologies
 
-![Data Tech Banner](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzg1bDlnYmJmZmlhdHdnZnluNnQxNGRmcnVmNmdkcG83eHZ4eGx2ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ea1og6A4qk3mJ5JkVX/giphy.gif)
+![Data Tech Banner](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmQwY2VxcjI5emIyOWV2d216bTE1YzEydHF2MnlrdTV3NDFnNng1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kZqbBT64ECtjy/giphy.gif)
 
 Hi there! 👋  
 This is my GitHub space for all things **Data Capture Technologies**.  
