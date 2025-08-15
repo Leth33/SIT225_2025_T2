@@ -1,4 +1,4 @@
-// ESP32 + DHT11 CSV logger for SIT225 Week 7
+// ESP32 + DHT11 CSV logger
 // Hardware: ESP32 + DHT11 (or DHT22 if you have it)
 // Library: Adafruit Unified Sensor + Adafruit DHT sensor library
 
@@ -14,7 +14,7 @@ void setup() {
   Serial.begin(115200);
   dht.begin();
 
-  // Print CSV header once (the logger also writes its own header; this is for human sanity)
+  
   Serial.println("timestamp,temperature_C,humidity_pct");
 }
 
@@ -22,13 +22,13 @@ void loop() {
   float h = dht.readHumidity();
   float t = dht.readTemperature(); // Celsius
 
-  // NaN check — sensor can glitch occasionally
+  
   if (isnan(h) || isnan(t)) {
     delay(2000);
     return;
   }
 
-  // Build ISO timestamp
+  // ISO timestamp
   time_t now = time(nullptr);
   struct tm *tm_info = localtime(&now);
   char ts[25];
@@ -48,5 +48,5 @@ void loop() {
   Serial.print(",");
   Serial.println(h, 2);
 
-  delay(2000); // every ~2 seconds
+  delay(2000); // every 2 seconds
 }
