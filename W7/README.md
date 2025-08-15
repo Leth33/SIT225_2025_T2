@@ -1,6 +1,5 @@
 # SIT225 Week 7 — Data Analysis & Interpretation
 
-This folder contains all code, data, and outputs for SIT225 7.1P.
 
 ## Overview
 The goal of this task was to:
