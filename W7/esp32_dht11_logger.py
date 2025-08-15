@@ -1,24 +1,8 @@
-#!/usr/bin/env python3
-"""
-esp32_dht11_logger.py
----------------------
-Logs Arduino/ESP32 Serial prints into a CSV file for SIT225 Week 7.
-
-Expected serial line format from the sketch:
-timestamp_iso,temperature_C,humidity_pct
-
-Example:
-2025-08-15T09:30:00,25.2,52.1
-
-Usage:
-  1) Connect your ESP32, find its serial port (e.g., COM5 on Windows, /dev/ttyUSB0 on Linux, /dev/tty.SLAB_USBtoUART on macOS).
-  2) python esp32_dht11_logger.py --port /dev/ttyUSB0 --baud 115200 --out sensor_data.csv
-"""
 import argparse, csv, sys, time
 from datetime import datetime
 
 try:
-    import serial  # type: ignore
+    import serial
 except ImportError:
     print("pyserial is required. Install with: pip install pyserial")
     sys.exit(1)
