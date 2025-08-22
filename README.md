@@ -4,7 +4,7 @@
 
 Hi there! 🫣
 
-This is my GitHub space for **Data Capture Technologies**.  
+This repository is for my **Data Capture Technologies**.  
 
 I’m uploading my work here as I go through the unit — from small experiments and weekly activities to bigger assessment tasks. It’s a mix of code, data, and ideas that will keep growing over the semester. ✨  
 
