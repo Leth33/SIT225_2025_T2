@@ -52,10 +52,4 @@ The system demonstrated a **full IoT workflow**:
 - Historical data export (CSV)  
 - Optional offline analysis with Python  
 
-Some technical challenges (e.g., serial port access & SSL issues) were resolved, showing the importance of debugging both hardware and software in IoT projects.  
-
-✅ This setup met the assessment requirements and proved the usefulness of IoT platforms for real-time monitoring and deeper analysis.  
-
----
-
-## 📂 Repository Contents
+Some technical challenges (e.g., serial port access & SSL issues) were resolved, showing the importance of debugging both hardware and software in IoT projects.
