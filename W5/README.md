@@ -1,4 +1,4 @@
-# SIT225 Week 5: Firebase Gyroscope Data Pipeline
+# SIT225 Week 5: Store data to cloud
 
 A complete data capture and analysis system for Arduino Nano 33 IoT gyroscope data using Firebase Realtime Database.
 
