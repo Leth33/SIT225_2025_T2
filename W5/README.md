@@ -263,8 +263,4 @@ W5/
 
 - [Arduino Nano 33 IoT IMU Tutorial](https://docs.arduino.cc/tutorials/nano-33-iot/imu-gyroscope)
 - [Firebase Realtime Database REST API](https://firebase.google.com/docs/database/rest/start)
-- [SIT225 Data Capture Technologies](https://www.deakin.edu.au/study/course/sit225)
 
-## License
-
-This project is part of SIT225 Data Capture Technologies coursework at Deakin University.
