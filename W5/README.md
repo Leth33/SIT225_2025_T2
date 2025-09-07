@@ -240,12 +240,10 @@ ts,gx,gy,gz
 W5/
 ├── firebase_gyro_pipeline.py    # Main Python script
 ├── nano33_gyro_logger.ino       # Arduino sketch
-├── gyro_data_final.csv          # Exported data (7,953 samples)
+├── gyro_data_final.csv          # Exported data (7k + samples)
 ├── gyro_data_final_*.png        # Generated plots
 ├── sit225_Gyro_Data_Export.json # Raw Firebase data
-├── SIT225_Week5_Answers.txt     # Assignment answers
 ├── README.md                    # This file
-└── venv/                        # Python virtual environment
 ```
 
 ## Results Summary
