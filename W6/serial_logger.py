@@ -1,8 +1,3 @@
-# Python serial logger for Nano 33 IoT gyroscope CSV
-# Usage:
-#   python serial_logger.py --port COM10 --baud 115200 --outfile gyro_data.csv --minutes 12
-# On macOS, port might look like: /dev/cu.usbmodem14101
-
 import argparse, csv, sys, time
 from datetime import datetime, timezone
 import serial
