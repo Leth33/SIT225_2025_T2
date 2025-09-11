@@ -1,10 +1,3 @@
-# SIT225 Week 6 – Plotly Dash Gyroscope Dashboard
-# Author: (Your Name)
-# Usage: python app.py
-# This app loads a CSV with columns: time, x, y, z
-# and provides interactive controls for chart type, variable selection,
-# pagination (N samples + next/prev), and a live summary table.
-
 import os
 import math
 import pandas as pd
@@ -14,7 +7,7 @@ from dash import Dash, dcc, html, Input, Output, State, dash_table, ctx, no_upda
 import plotly.graph_objs as go
 
 # ---------- CONFIG ----------
-DEFAULT_CSV = os.environ.get("GYRO_CSV", "gyro_data.csv")  # override with env var if desired
+DEFAULT_CSV = os.environ.get("GYRO_CSV", "gyro_data.csv")
 DATE_COLS = ["time"]
 REQUIRED_COLS = ["time", "x", "y", "z"]
 
@@ -24,8 +17,6 @@ server = app.server
 
 def load_csv(path: str) -> pd.DataFrame:
     if not os.path.exists(path):
-        # Create a small demo dataframe so the app still runs.
-        # 1200 samples (~2 minutes at 10Hz) as placeholder.
         n = 1200
         t0 = pd.Timestamp.utcnow().floor("s")
         times = pd.date_range(t0, periods=n, freq="100L")  # 10 Hz
@@ -39,7 +30,6 @@ def load_csv(path: str) -> pd.DataFrame:
     try:
         df = pd.read_csv(path)
     except Exception:
-        # try with datetime parse
         df = pd.read_csv(path, parse_dates=DATE_COLS, infer_datetime_format=True)
 
     # Normalize column names
@@ -234,7 +224,6 @@ def update_graph(chart_type, vars_selected, samples_value, n_prev, n_next, goto_
     State("upload-data", "filename")
 )
 def upload_csv(contents, filename):
-    # Simple hot reload: save uploaded CSV to DEFAULT_CSV name and reload module-level df
     global df
     if contents is None:
         return len(df)
