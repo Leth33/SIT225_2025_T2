@@ -1,23 +1,3 @@
-# week8_app.py
-# SIT225 Week 8 — Phone Accelerometer → Plotly Dash (live updates + buffers)
-# Mode: SIMULATION by default; switch to LIVE once you have Arduino IoT Cloud creds.
-#
-# How it works:
-# - Collects continuous (x,y,z,timestamp) samples into buffer_a.
-# - Every N samples (e.g., 1000), it copies a window to buffer_b and updates graphs.
-# - Each refresh also saves a PNG graph and a CSV with a timestamped filename.
-#
-# Requirements:
-#   pip install dash plotly pandas numpy
-#
-# Usage:
-#   python week8_app.py
-#   (Then open the printed local URL in your browser)
-#
-# To use LIVE mode later:
-#   1) Fill the TODO section in get_live_sample() to fetch from Arduino IoT Cloud.
-#   2) Set SIM_MODE = False.
-
 import os, time, random, math
 from collections import deque
 from datetime import datetime
@@ -56,7 +36,7 @@ def get_live_sample():
         # Check if credentials are configured
         if (ARDUINO_DEVICE_ID == "your_device_id_here" or
             ARDUINO_THING_ID == "your_thing_id_here"):
-            print("⚠️  Arduino IoT Cloud credentials not configured. Using simulation mode.")
+            print("Arduino IoT Cloud credentials not configured. Using simulation mode.")
             raise Exception("Credentials not configured")
         
         # Create Arduino IoT Cloud client using device key
@@ -75,11 +55,11 @@ def get_live_sample():
         return (datetime.now(), x, y, z)
         
     except ImportError:
-        print("❌ Arduino IoT Cloud client not installed. Run: pip install arduino-iot-cloud")
+        print("Arduino IoT Cloud client not installed. Run: pip install arduino-iot-cloud")
         raise Exception("Arduino IoT Cloud client not available")
         
     except Exception as e:
-        print(f"❌ Error fetching live data: {e}")
+        print(f"Error fetching live data: {e}")
         print("🔄 Falling back to simulation mode...")
         # Fallback to simulated data
         import random
