@@ -1,7 +1,3 @@
-# serial_logger_lite.py
-# Usage:
-#   1) Plug board, note your serial port (e.g., COM4 on Windows, /dev/tty.usbmodem* on macOS)
-#   2) python serial_logger_lite.py --port COM4 --out deskcoach_session.csv
 import argparse, csv, datetime as dt, time
 import serial
 from pathlib import Path
