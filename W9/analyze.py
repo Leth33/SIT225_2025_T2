@@ -1,5 +1,3 @@
-# analyze.py
-# Analysis script for Desk Coach Lite (IMU data)
 import pandas as pd
 import numpy as np
 import plotly.express as px
