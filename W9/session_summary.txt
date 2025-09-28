@@ -1,0 +1,5 @@
+Duration (min): 39.8
+Slouching (%): 0.044
+Baseline pitch (deg): 5.7
+Pitch range: 2.9 to 18.1
+Average pitch (deg): 7.5
